@@ -19,7 +19,9 @@ The first method is easier; the second can be used even if you have no Internet 
 
 In each directory there is a "c" directory (cpubsubserverlocator, for example) that's the client Photon code and an "s" directory that's the server Photon code.
 
-There's anothher technology, [mdns] (https://en.wikipedia.org/wiki/Multicast_DNS), that could also be used. There is an [mdns server for the Photon] (https://github.com/mrhornsby/spark-core-mdns). It's really useful if you're running a HTTP server on your Photon and you want to connect to it from a web browser Mac or Linux. The problem is that there isn't an mdns client, and it adds a lot of complexity that you don't need for Photon to Photon communication, so I didn't use it here.
+I also have another example that uses a [local server written in node.js] (https://github.com/rickkas7/localserver) that uses publish and subscribe to not only locate the server IP address, but also for authentication.
 
+There's another technology, [mdns] (https://en.wikipedia.org/wiki/Multicast_DNS), that could also be used. There is an [mdns server for the Photon] (https://github.com/mrhornsby/spark-core-mdns). It's really useful if you're running a HTTP server on your Photon and you want to connect to it from a web browser Mac or Linux. The problem is that there isn't an mdns client, and it adds a lot of complexity that you don't need for Photon to Photon communication, so I didn't use it here.
 
+ 
 
